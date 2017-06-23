@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1737E3DD1EFBFB7D00ABD898 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737E3DC1EFBFB7D00ABD898 /* LoginManager.swift */; };
 		174834BF1EFA972E00F9327F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834BE1EFA972E00F9327F /* AppDelegate.swift */; };
 		174834C11EFA972E00F9327F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834C01EFA972E00F9327F /* ViewController.swift */; };
 		174834C41EFA972E00F9327F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174834C21EFA972E00F9327F /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		174834C91EFA972E00F9327F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174834C71EFA972E00F9327F /* LaunchScreen.storyboard */; };
 		174834D41EFA972E00F9327F /* SwiftNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834D31EFA972E00F9327F /* SwiftNetTests.swift */; };
 		174834DF1EFA972E00F9327F /* SwiftNetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834DE1EFA972E00F9327F /* SwiftNetUITests.swift */; };
+		174834ED1EFA9C5D00F9327F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834EC1EFA9C5D00F9327F /* Login.swift */; };
+		174834EF1EFABC0700F9327F /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834EE1EFABC0700F9327F /* LoginResult.swift */; };
+		174834F11EFAC30D00F9327F /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174834F01EFAC30D00F9327F /* Format.swift */; };
+		94F6B9D338EBA0652805EB4B /* Pods_SwiftNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4DB0B43607331CD3F326B9 /* Pods_SwiftNet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1737E3DC1EFBFB7D00ABD898 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		174834BB1EFA972E00F9327F /* SwiftNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174834BE1EFA972E00F9327F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		174834C01EFA972E00F9327F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		174834DA1EFA972E00F9327F /* SwiftNetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		174834DE1EFA972E00F9327F /* SwiftNetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNetUITests.swift; sourceTree = "<group>"; };
 		174834E01EFA972E00F9327F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174834EC1EFA9C5D00F9327F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		174834EE1EFABC0700F9327F /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		174834F01EFAC30D00F9327F /* Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
+		5D4DB0B43607331CD3F326B9 /* Pods_SwiftNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		726D8C0367C4681B9F478AC3 /* Pods-SwiftNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNet/Pods-SwiftNet.release.xcconfig"; sourceTree = "<group>"; };
+		A24449EEEA9DA5A531672658 /* Pods-SwiftNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNet/Pods-SwiftNet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F6B9D338EBA0652805EB4B /* Pods_SwiftNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,8 @@
 				174834D21EFA972E00F9327F /* SwiftNetTests */,
 				174834DD1EFA972E00F9327F /* SwiftNetUITests */,
 				174834BC1EFA972E00F9327F /* Products */,
+				26F58096C187B2F26E3F16C9 /* Pods */,
+				CB41885FCB0C910512B57004 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +118,10 @@
 				174834C51EFA972E00F9327F /* Assets.xcassets */,
 				174834C71EFA972E00F9327F /* LaunchScreen.storyboard */,
 				174834CA1EFA972E00F9327F /* Info.plist */,
+				174834EC1EFA9C5D00F9327F /* Login.swift */,
+				174834EE1EFABC0700F9327F /* LoginResult.swift */,
+				174834F01EFAC30D00F9327F /* Format.swift */,
+				1737E3DC1EFBFB7D00ABD898 /* LoginManager.swift */,
 			);
 			path = SwiftNet;
 			sourceTree = "<group>";
@@ -125,6 +144,23 @@
 			path = SwiftNetUITests;
 			sourceTree = "<group>";
 		};
+		26F58096C187B2F26E3F16C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A24449EEEA9DA5A531672658 /* Pods-SwiftNet.debug.xcconfig */,
+				726D8C0367C4681B9F478AC3 /* Pods-SwiftNet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB41885FCB0C910512B57004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D4DB0B43607331CD3F326B9 /* Pods_SwiftNet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 174834E31EFA972E00F9327F /* Build configuration list for PBXNativeTarget "SwiftNet" */;
 			buildPhases = (
+				4A0A095685E107788494C3E5 /* [CP] Check Pods Manifest.lock */,
 				174834B71EFA972E00F9327F /* Sources */,
 				174834B81EFA972E00F9327F /* Frameworks */,
 				174834B91EFA972E00F9327F /* Resources */,
+				B85826EEAE8C0DCA25B3B559 /* [CP] Embed Pods Frameworks */,
+				D1421DEE08A3C4583B92DCBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +296,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A0A095685E107788494C3E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B85826EEAE8C0DCA25B3B559 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNet/Pods-SwiftNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1421DEE08A3C4583B92DCBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNet/Pods-SwiftNet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		174834B71EFA972E00F9327F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174834EF1EFABC0700F9327F /* LoginResult.swift in Sources */,
+				174834ED1EFA9C5D00F9327F /* Login.swift in Sources */,
+				174834F11EFAC30D00F9327F /* Format.swift in Sources */,
 				174834C11EFA972E00F9327F /* ViewController.swift in Sources */,
 				174834BF1EFA972E00F9327F /* AppDelegate.swift in Sources */,
+				1737E3DD1EFBFB7D00ABD898 /* LoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +506,7 @@
 		};
 		174834E41EFA972E00F9327F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24449EEEA9DA5A531672658 /* Pods-SwiftNet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NUMBWL7MDQ;
@@ -428,6 +520,7 @@
 		};
 		174834E51EFA972E00F9327F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 726D8C0367C4681B9F478AC3 /* Pods-SwiftNet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NUMBWL7MDQ;
@@ -516,6 +609,7 @@
 				174834E51EFA972E00F9327F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		174834E61EFA972E00F9327F /* Build configuration list for PBXNativeTarget "SwiftNetTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +618,7 @@
 				174834E81EFA972E00F9327F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		174834E91EFA972E00F9327F /* Build configuration list for PBXNativeTarget "SwiftNetUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +627,7 @@
 				174834EB1EFA972E00F9327F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

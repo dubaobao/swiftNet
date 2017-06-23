@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireObjectMapper
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let login = Login()
+        login.email = "johndoe@client.com"
+        login.password = "john_doe"
+        let loginResult = LoginManager.login(login)
+        print(loginResult?.userId)
     }
 
     override func didReceiveMemoryWarning() {
