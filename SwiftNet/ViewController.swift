@@ -17,9 +17,18 @@ class ViewController: UIViewController {
         
         let login = Login()
         login.email = "johndoe@client.com"
-        login.password = "john_doe"
-        let loginResult = LoginManager.login(login)
-        print(loginResult?.userId)
+        login.password = "john"
+        var lresult:LoginResult? = nil
+        LoginManager.login(login, completionHandler: {(isSuccess, loginResult, error) -> Void in
+            if(isSuccess == true){
+                lresult = loginResult
+            }
+
+            if(isSuccess == false && (error != nil)){
+                print(error?.responseCode)
+            }
+        })
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,13 +12,17 @@ import AlamofireObjectMapper
 
 class LoginManager: NSObject{
     
-    class func login(_ login:Login) -> LoginResult?{
+class func login(_ login:Login,
+                     completionHandler: @escaping(Bool, LoginResult?, Error?, NSNumber?) ->Void) -> Void{
         let JSONDictionary = login.toJSON()
-        var loginResult: LoginResult? = nil
-        Alamofire.request("https://stg.back.birdiz.com/api/v1/login", method: .post, parameters: JSONDictionary, encoding: URLEncoding.default).responseObject { (response: DataResponse<LoginResult>) in
-            loginResult = response.result.value
+        Alamofire.request("https://stg.back.birdiz.com/api/v1/login", method: .post, parameters: JSONDictionary, encoding: URLEncoding.default).validate(statusCode: 200..<300).responseObject { (response: DataResponse<LoginResult>) in
+            
+            if let loginResult = response.result.value{
+                completionHandler(true, loginResult, nil, nil)
+            }
+            else{
+                completionHandler(false, nil, response.error as? AFError, (response.error as? AFError)?.responseCode as NSNumber?)
+            }
         }
-        return loginResult
     }
-    
 }
